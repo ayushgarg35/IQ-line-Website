@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs | IQ-Line - Healthcare AI and Digital Health Insights</title>
+  <meta name="description" content="Read IQ-Line's insights on healthcare AI, digital health, ABDM, and the future of healthcare in India." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-chevron-right"></i>
+      Blogs
+    </div>
+    <div class="tag">Insights & Updates</div>
+    <h1>Healthcare AI & <span style="color:#3DBDB1;">Digital Health</span> Insights</h1>
+    <p>Perspectives from IQ-Line's team on healthcare technology, interoperability, medical education, and digitising Bharat's health system.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="blog-featured fade-up" id="featured-post"></div>
+
+    <div class="categories-filter fade-up" id="category-filters"></div>
+
+    <div class="blog-grid" id="blog-grid"></div>
+
+    <div class="pagination fade-up" id="blog-pagination"></div>
+  </div>
+</section>
+
+<section class="section-pad-sm" style="background:var(--light-gray);">
+  <div class="container">
+    <div style="background:linear-gradient(135deg,#0f2027,#203a43); border-radius:var(--radius-lg); padding:52px; text-align:center; position:relative; overflow:hidden;" class="fade-up">
+      <div style="position:absolute; top:-30px; right:-30px; width:180px; height:180px; border-radius:50%; background:rgba(61,189,177,0.1);"></div>
+      <div class="tag" style="background:rgba(61,189,177,0.15); color:#3DBDB1; position:relative; z-index:1;">Newsletter</div>
+      <h2 style="color:white; margin:12px 0 12px; position:relative; z-index:1;">Stay Ahead in Digital Health</h2>
+      <p style="color:rgba(255,255,255,0.65); max-width:500px; margin:0 auto 28px; position:relative; z-index:1;">Weekly insights on AI in healthcare, ABDM updates, product announcements, and digital health trends delivered to your inbox.</p>
+      <form id="newsletterForm" style="display:flex; gap:12px; max-width:480px; margin:0 auto; position:relative; z-index:1; flex-wrap:wrap; justify-content:center;">
+        <input type="email" name="email" placeholder="Enter your email address" style="flex:1; min-width:240px; padding:14px 18px; border-radius:8px; border:none; font-size:0.95rem; outline:none;" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="status-message" id="newsletterStatus" style="position:relative; z-index:1;"></p>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/main.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/blogs.js"></script>
+<script src="js/forms.js"></script>
+<script>
+  document.getElementById('nav-placeholder').innerHTML = buildNav('blogs');
+  document.getElementById('footer-placeholder').innerHTML = buildFooter();
+  initBlogPage();
+  initSiteForms();
+</script>
+</body>
+</html>

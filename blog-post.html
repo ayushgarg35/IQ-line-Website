@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IQ-Line Blog</title>
+  <meta name="description" content="Read long-form healthcare technology insights from IQ-Line." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-chevron-right"></i>
+      <a href="blogs.html">Blogs</a>
+      <i class="fas fa-chevron-right"></i>
+      Article
+    </div>
+    <div class="tag">IQ-Line Insights</div>
+    <h1>Healthcare technology ideas, explained for <span style="color:#3DBDB1;">real-world teams</span></h1>
+    <p>Policy, infrastructure, interoperability, clinical workflows, and practical digitisation lessons from the field.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="article-shell">
+      <article class="article-card fade-up">
+        <div class="article-hero" id="article-hero"></div>
+        <div class="article-body" id="article-body"></div>
+      </article>
+
+      <aside class="article-sidebar-card fade-up delay-1">
+        <h4>More From IQ-Line</h4>
+        <p style="font-size:0.88rem; margin-bottom:18px;">Keep exploring related posts on healthcare operations, digital public infrastructure, and medical education systems.</p>
+        <div class="related-posts" id="related-posts"></div>
+        <div style="margin-top:24px;">
+          <a href="blogs.html" class="btn btn-outline" style="width:100%; justify-content:center;">Back to All Articles</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/main.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/blog-post.js"></script>
+<script>
+  document.getElementById('nav-placeholder').innerHTML = buildNav('blogs');
+  document.getElementById('footer-placeholder').innerHTML = buildFooter();
+  initBlogPostPage();
+</script>
+</body>
+</html>
